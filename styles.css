@@ -1,0 +1,126 @@
+body {
+    background-color: #f0f0f0; /* Light gray background for a clean look */
+    color: #333333; /* Dark text color for readability */
+    font-family: 'Arial', sans-serif; /* Classic and modern font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 8px; /* Slightly rounded corners for a modern touch */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h1, h2 {
+    color: #000000; /* Black text for headers */
+    font-weight: bold;
+    border-bottom: 1px solid #cccccc; /* Light gray border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px; /* Larger font size for main title */
+}
+
+h2 {
+    font-size: 20px; /* Slightly smaller font size for section headers */
+}
+
+a {
+    color: #007bff; /* Modern blue color for links */
+    text-decoration: none;
+    border-bottom: 1px solid #007bff; /* Blue underline for links */
+    transition: color 0.3s, border-color 0.3s;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker blue underline on hover */
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+ul.list {
+    margin-left: 20px;
+    list-style-type: disc; /* Standard bullet points */
+}
+
+ul.list li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f0f0f0; /* Light gray background for footer */
+    color: #333333; /* Dark text color */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #cccccc; /* Light gray border on top */
+}
+
+.footer-content {
+    margin: 0 auto;
+}
+
+.footer-link {
+    color: #007bff; /* Modern blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarges the link */
+}
+
+.discord-link {
+    animation: bounce 2s infinite; /* Bouncing animation for Discord link */
+}
+
+.panel-link {
+    animation: pulse 2s infinite; /* Pulsing animation for Control Panel link */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+}
